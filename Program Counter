@@ -1,0 +1,18 @@
+module top_module (
+input clk, reset,
+input branch_taken, 
+input[63:0] branch_target,
+output reg[63:0] pc_out
+);
+    always@(posedge clk or posedge reset)begin
+        if(reset)begin
+            pc_out <= 64'd0;
+        end
+        else if(branch_taken)begin
+            pc_out <= branch_target;
+        end
+        else begin
+            pc_out <= pc_out + 64'd4;
+   	 end
+    end
+endmodule
