@@ -1,4 +1,4 @@
-module top_module (
+module program_counter (
 input clk, reset,
 input branch_taken, 
 input[63:0] branch_target,
