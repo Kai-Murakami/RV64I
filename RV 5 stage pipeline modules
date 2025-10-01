@@ -1,0 +1,17 @@
+riscv_cpu
+├── top.v                (top-level processor) 
+├── if.v                 (instruction fetch)
+├── id.v                 (instruction decode)
+├── ex.v                 (execute)
+├── mem.v                (memory access)
+├── wb.v                 (write-back)
+├── pc.v             (program counter)
+├── reg.v                (register file)
+├── alu.v                (arithmetic/logic unit)
+├── control.v            (control unit)
+├── imm_gen.v            (immediate generator)
+├── hazard_unit.v        (hazard detection)
+├── forwarding_unit.v    (forwarding logic)
+├── imem.v               (instruction memory model)
+├── dmem.v               (data memory model)
+
